@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MovieDetailActivity"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/movie_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/movie_list_thumbnail"
+            android:contentDescription="@string/movie_detail_thumbnail"
+            android:layout_width="140dp"
+            android:layout_height="230dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/movie_list_title"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/movie_list_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/movie_list_thumbnail"
+            android:layout_margin="10dp"
+            android:textSize="14sp"  />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/movie_list_description"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hasSeen_AlreadySeen"
+                android:onClick="onRadioSwitch"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioSwitch"
+                android:text="@string/hasSeen_WantToSee" />
+            <RadioButton
+                android:id="@+id/radioButton_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hasSeen_DoNotLike"
+                android:onClick="onRadioSwitch"/>
+
+
+        </RadioGroup>
+
+
+
+    <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+</ScrollView>

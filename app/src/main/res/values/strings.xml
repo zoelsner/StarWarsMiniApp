@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Star Wars App</string>
+    <string name="banner_title">Star Wars Movies!</string>
+    <string name="hasSeen_WantToSee">Want to see!</string>
+    <string name="hasSeen_AlreadySeen">Already seen!</string>
+    <string name="hasSeen_DoNotLike">Do not like!</string>
+    <string name="submit_Button">Submit</string>
+    <string name="has_seen_question">Have you seen it?</string>
+
+    <string name="movie_detail_title">Title</string>
+    <string name="movie_detail_description">Description</string>
+    <string name="movie_detail_characters">Characters</string>
+    <string name="movie_detail_thumbnail">Thumbnail</string>
+    <string name="radio_detail_alreadySeen">Already Seen</string>
+    <string name="radio_detail_want_to_see">Want to see!</string>
+    <string name="radio_detail_Do_NOT_LIke">Do not like!</string>
+    <string name="submit">Submit</string>
+
+
+</resources>
